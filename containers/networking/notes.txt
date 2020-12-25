@@ -1,0 +1,2 @@
+docker-compose up --scale web=10
+start 10 containers

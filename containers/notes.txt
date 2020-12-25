@@ -1,0 +1,5 @@
+run mongodb
+docker run -d --network=app-net -p 27017:27017 --name=db --rm mongo:3
+
+connect to running database
+docker run -it --network=app-net --rm mongo:3 mongo --host db
